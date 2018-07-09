@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="160dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dlna_select_device_find_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="未发现可投屏设备"/>
+
+        <ProgressBar
+            android:id="@+id/dlna_select_device_find_pb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/dlna_select_device_help_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#ff8d34"
+            android:text="投屏助手"
+            />
+
+        <ImageView
+            android:id="@+id/dlna_select_device_close_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/btn_nav_close"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dlna_select_device_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <TextView
+        android:id="@+id/dlna_select_device_wifi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="请检查可投屏设备是否连接当前Wi-Fi"
+        android:textSize="12sp"/>
+
+</LinearLayout>
